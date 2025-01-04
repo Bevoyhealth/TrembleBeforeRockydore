@@ -1,12 +1,11 @@
 import requests
 import os
 
-api_key = os.environ['api_key']
+api_key = os.environ['API_KEY']
 
 def chat_with_bot(message, conversation_id=None):
 
-    # url = "https://f3470hwpe4.execute-api.us-east-2.amazonaws.com/chat"  # AWS
-    url = 'https://rockydore.com/chat'  # Custom domain
+    url = 'https://rockydore.com/chat'
 
     payload = {
         "message": message,
