@@ -34,7 +34,7 @@ def main():
 
     response, conversation_id = chat_with_bot('')
     if response:
-        print(f"\nInsito Bot: {response}")
+        print(f"conversation_id: {conversation_id}\nInsito Bot: {response}")
 
     while True:
         user_input = input("\nYou: ")
